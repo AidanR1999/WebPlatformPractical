@@ -6,15 +6,19 @@ http.createServer(function(req,res){
     path = req.url.replace(/\/?(?:\?.*)?$/, '').toLowerCase();
     switch(path) {
         case '':
-            res.writeHead(200, { 'Content-Type': 'html' });
+            res.writeHead(200, { 'Content-Type': 'text/html' });
             res.end('Homepage');
             break;
         case '/about':
-            res.writeHead(200, { 'Content-Type': 'text/plain' });
+            res.writeHead(200, { 'Content-Type': 'text/html' });
             res.end('About');
             break;
+        case '/products':
+            res.writeHead(200, { 'Content-Type': 'text/html' });
+            res.end('Products');
+            break;
         default:
-            res.writeHead(404, { 'Content-Type': 'text/plain' });
+            res.writeHead(404, { 'Content-Type': 'text/html' });
             res.end('Not Found');
             break;
         }
