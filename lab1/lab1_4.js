@@ -18,16 +18,16 @@ http.createServer(function(req,res){
     path = req.url.replace(/\/?(?:\?.*)?$/, '').toLowerCase();
     switch(path) {
         case '':
-            serveStaticFile(res, '/public/index.html', 'text/html');
+            serveStaticFile(res, '../public/index.html', 'text/html');
             break;
         case '/about':
-            serveStaticFile(res, '/public/about.html', 'text/html');
+            serveStaticFile(res, '../public/about.html', 'text/html');
             break;
         case '/img/logo.jpg':
-            serveStaticFile(res, '/public/img/logo.jpg', 'image/jpeg');
+            serveStaticFile(res, '../public/img/logo.jpg', 'image/jpeg');
             break;
         default:
-            serveStaticFile(res, '/public/404.html', 'text/html',404);
+            serveStaticFile(res, '../public/404.html', 'text/html',404);
             break;
     }
 }).listen(3000);
