@@ -1,0 +1,22 @@
+{
+  "name": "webplatformpractical",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lab1_1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AidanR1999/WebPlatformPractical.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AidanR1999/WebPlatformPractical/issues"
+  },
+  "homepage": "https://github.com/AidanR1999/WebPlatformPractical#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
