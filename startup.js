@@ -20,7 +20,7 @@ app.use(function (req, res, next) {
 });
 // 500 error handler (middleware)
 app.use(function (err, req, res, next) {
-    console.error(err.stack); res.status(500); res.render('500');
+    console.error(err.stack); res.status(500); res.render('500.html');
 })
 
 app.listen(app.get('port'), function () {
